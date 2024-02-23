@@ -1,3 +1,12 @@
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout';
+import { FirstComponent } from './firstComponent/FirstComponent';
+
 export const App = () => {
-  return <div>React homework template</div>;
+  return (
+    <Layout>
+      <FirstComponent title="Hello" />
+      <GlobalStyle />
+    </Layout>
+  );
 };
